@@ -1,0 +1,8 @@
+
+1. sql실습에서 구성한 Store, Medicine, Inventory 테이블이 있는 DB를 활용
+2. s_id를 경로 매개변수로 GET 요청이 오면 해당 s_id의 Store의 데이터를 json으로 반환하는 restful 생성
+2. m_id를 경로 매개변수로 GET 요청이 오면 해당 m_id의 Medicine 데이터를 json으로 반환하는 restful 생성
+3. s_id, m_id, price, count를 json 매개변수로 POST 요청이 오면 Inventory 생성하여 DB에 저장하는 restful 생성
+    3-1. Inventory 생성시 manage_date는 현재 시간으로 할당
+4. m_id, city를 json 매개변수로 GET 요청이 오면 해당 m_id를 재고로 가지고 해당city에 속하는 스토어를 리스트로 반환하는 restful 생성
+ 

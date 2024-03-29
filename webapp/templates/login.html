@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post">
+    <div>
+        <label for="userName">username : </label>
+        <input type="text" id="userName" name="userName"/>
+    </div>
+    <div>
+        <label for="uPassword" class="form-label">password : </label>
+        <input type="password" id="uPassword" name="uPassword">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<a href="{{url_for('register')}}">join in</a>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="py-3 text-center">
+      <h2>Aiot join in</h2>
+    </div>
+
+    <div class="row justify-content-center">
+        <form class="col-4 p-md-5 border rounded-3 bg-light" action="/register" method="post">
+            <div class="mb-3">
+                <label for="userName" class="form-label">username</label>
+                <input type="text" class="form-control" id="userName" aria-describedby="sIdHelp" name="userName">
+                <div id="sIdHelp" class="form-text">input user name</div>
+            </div>
+            <div class="mb-3">
+                <label for="uPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="uPassword" name="uPassword">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="aiotCheck">
+                <label class="form-check-label" for="aiotCheck">Aiot에 동의</label>
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}
